@@ -70,22 +70,23 @@ void FlyCamera::update(float dt)
 		world[3] += world[1] * speed * dt;
 	}
 	
-	double x_delta , y_delta;
-
-	glfwGetCursorPos(curr_window, &x_delta, &y_delta);
-	glfwSetCursorPos(curr_window, 1280.f / 2.f, 720.f / 2.f);
-
-	x_delta -= (1280.f / 2.f);
-	y_delta -= (720.f / 2.f);
-
-	x_delta /= (1280.f / 2.f);
-	y_delta /= (720.f / 2.f);
-
-	x_delta *= -sensitivity;
-	y_delta *= -sensitivity;
 
 	if (glfwGetMouseButton(curr_window, 1))
 	{
+		double x_delta, y_delta;
+		glfwGetCursorPos(curr_window, &x_delta, &y_delta);
+		//sets to centre
+		glfwSetCursorPos(curr_window, 1280.f / 2.f, 720.f / 2.f);
+
+		x_delta -= (1280.f / 2.f);
+		y_delta -= (720.f / 2.f);
+
+		x_delta /= (1280.f / 2.f);
+		y_delta /= (720.f / 2.f);
+
+		x_delta *= -sensitivity;
+		y_delta *= -sensitivity;
+
 		vec3 camera_right = (vec3)world[0];
 
 		mat4 yaw = glm::rotate((float)x_delta, vec3(0, 1, 0));

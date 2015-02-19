@@ -1,9 +1,9 @@
-#include "CameraAndProjections.h"
+#include "Quaternions.h"
 //why were my pdb files not loading in my other projects like oh my god
 
 int main()
 {
-	CameraAndProjections app;
+	Quaternions app;
 
 	if (app.startup() == false)
 	{

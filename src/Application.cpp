@@ -33,7 +33,7 @@ bool Application::startup()
 	printf("Successfully loaded OpenGL version %d.%d\n",
 		major_version, minor_version);
 
-	glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
+	//glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
 
 	glfwSwapInterval(1);
 

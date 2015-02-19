@@ -14,6 +14,18 @@
     <Filter Include="IntroToOpengl">
       <UniqueIdentifier>{f0ec5b92-8ec1-469f-adc9-3c9d77d61e6f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{819fae05-577e-4f12-bcc5-c7e2a7250910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Texture">
+      <UniqueIdentifier>{ca3ef808-2687-4353-bd31-1554e2f0fb6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lighting">
+      <UniqueIdentifier>{1969780e-f567-46a3-8894-33d21db165e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quaternions">
+      <UniqueIdentifier>{72529e1e-e531-4f1d-9a4d-0af62edb04c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\CameraAndProjections.h">
@@ -35,6 +47,21 @@
       <Filter>IntroToOpengl</Filter>
     </ClInclude>
     <ClInclude Include="src\Vertex.h" />
+    <ClInclude Include="src\GUI.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AntTweakBar.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stb_image.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Quaternions.h">
+      <Filter>Quaternions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\CameraAndProjections.cpp">
@@ -55,6 +82,15 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Camera.cpp">
       <Filter>Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Quaternions.cpp">
+      <Filter>Quaternions</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
